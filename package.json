@@ -1,0 +1,28 @@
+{
+  "name": "html-extract",
+  "version": "0.1.0",
+  "description": "Extract information from HTML files.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Pu Jian",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "^26.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "form-data": "^4.0.0"
+  }
+}

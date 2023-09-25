@@ -1,0 +1,27 @@
+You will be given a sample HTML file that contains a few entries. Extract information from each entry.
+
+In each entry, extract:
+
+    Title
+    Action
+    Text
+    Link
+    Timestamp
+    Products
+
+Here’s a labeled example below. Note that "Text" is "Hush Phone Office" and "Link" is the actual URL. 
+
+![image.png](image.png)
+In the example above, the “Text” value is just “Hush Phone Office”, but it can also be text like “//example_link”, Create a new column called cleaned_text that cleans up the text from the “Text” column.
+
+    Remove non alphanumeric characters
+    Replace slashes, dashes, and underscores with spaces
+    Remove things like https, www., .com, etc.
+
+Embed the clean_text column using SentenceTransformers. Store the embedding in a local Qdrant database, and store all attributes (Title, Action, Text, Link, Timestamp, Products, and Cleaned_Text) in the payload.
+
+Build a simple electron app lets you upload HTML files to process. 
+
+Bonus: add the ability to search the database using semantic search through Qdrant in the electron app. 
+
+Implement this in Javascript for frontend and Python for everything else.
